@@ -35,8 +35,10 @@ except ImportError:
 
 CONFIG = {
     "resend_api_key": os.environ.get("RESEND_API_KEY", ""),
-    "sender_email": "hello@tryinferreach.com",
+    # UPDATED: Must match the domain verified in Resend (e.g., send.tryinferreach.com)
+    "sender_email": "hello@send.tryinferreach.com",
     "sender_name": "Prajwol",
+    # KEPT: Routes replies to your Zoho Mail inbox
     "reply_to": "hello@tryinferreach.com",
     "signature": """Cheers,
 Prajwol
